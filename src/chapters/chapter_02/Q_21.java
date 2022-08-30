@@ -17,7 +17,7 @@ public class Q_21 {
 		System.out.println("Enter the Number of Years:");
 		int year = input.nextInt();
 		
-		double value = amount * Math.pow((1 + (int_rate /12)), (year * 12));
+		double value = amount * Math.pow((1 + (int_rate /1200)), (year * 12));
 		
 		System.out.println("Accumulated value is " + value);
 
