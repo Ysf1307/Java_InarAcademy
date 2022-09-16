@@ -25,8 +25,5 @@ public class Q_09 {
 			System.out.println("The last digit is 'X'");
 		else
 			System.out.println("The last digit is " + d10);
-
-		
-
 }
 }
