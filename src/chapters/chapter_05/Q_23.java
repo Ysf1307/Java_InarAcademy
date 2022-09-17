@@ -6,11 +6,11 @@ public class Q_23 {
         double number1 = 0;
         double number2 = 0;
 
-        for (int i = 50000; i > 0; i--) {
+        for (double i = 50000; i > 0; i--) {
             number1 += 1 / i;
         }
 
-        for (int j = 1; j <= 50000; j++) {
+        for (double j = 1; j <= 50000; j++) {
             number2 += 1 / j;
         }
 

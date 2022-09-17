@@ -15,8 +15,7 @@ public class Q_05 {
             pound1 = kilogram1 * 2.2;
             kilogram2 = pound2 / 2.2;
 
-            System.out.format(kilogram1 + "\t%.2f", pound1 + "\t|\t" + pound2 + "\t%.2f", kilogram2 + "\n");
-
+            System.out.printf("%.0f\t\t\t%.2f\t|\t%.0f\t\t%.2f\n",kilogram1,pound1,pound2,kilogram2);
             kilogram1 += 2;
             pound2 += 5;
         }
