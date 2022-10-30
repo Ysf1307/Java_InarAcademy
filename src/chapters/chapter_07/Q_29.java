@@ -8,17 +8,18 @@ public class Q_29 {
         int sum = 0;
         int numberOfPick = 0;
 
-        for (int i = 0; i < 4; i++) {
-            int pick = (int)(Math.random()*52);
-            if (!deckOfCards[pick]){
-
-            }
-            sum += pick;
-            numberOfPick++;
-            if (sum >= 24){
-                break;
-            }
-        }
+        while (numberOfPick < 4){
+           int pick = (int)(Math.random()*52);
+           if (isPicked[pick]){
+               continue;
+           }
+           pick = pick % 13;
+           sum += pick + 1;
+           numberOfPick++;
+           if (sum > 24){
+               break;
+           }
+       }
 
         System.out.println("Number of picks: " + numberOfPick);
         System.out.println("Sum: " + sum);
