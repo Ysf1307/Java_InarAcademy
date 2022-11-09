@@ -13,7 +13,6 @@ public class Q_10 {
                 line += "\n";
             }
         }
-
         System.out.println(line);
     }
 }

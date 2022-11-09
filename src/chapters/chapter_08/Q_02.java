@@ -13,9 +13,28 @@ public class Q_02 {
                 matrix[i][j] = input.nextDouble();
             }
         }
+        System.out.println("Sum of the elements in the major diagonal is " + sumMajorDiagonal(matrix));
 
-
-
-
+    }
+    public static double sumMajorDiagonal(double[][] m){
+        double sumLeft = 0;
+        double sumRight = 0;
+        int row = 0;
+        int column = 0;
+        while (row < m.length){
+            sumLeft += m[row][column];
+            row++;
+            column++;
+        }
+        row = 0;
+        column = 3;
+        while (row < m.length){
+            sumRight += m[row][column];
+            row++;
+            column--;
+        }
+        if (sumLeft > sumRight){
+            return sumLeft;
+        }else return sumRight;
     }
 }
