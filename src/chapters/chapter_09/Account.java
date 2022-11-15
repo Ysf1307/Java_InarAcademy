@@ -10,17 +10,25 @@ public class Account {
     private static double annualInterestRate = 0;
     private static Date dateCreated = new Date();
 
-    Account(){
+
+
+    public Account(){
+        this(1000);
     }
-    Account(int newId, double newBalance){
+    public Account(double newBalance){
+        balance = newBalance;
+    }
+    public Account(int newId, double newBalance){
         id = newId;
         balance = newBalance;
     }
-    Account(int newId, double newBalance, double newAnnualInterestRate){
+    public Account(int newId, double newBalance, double newAnnualInterestRate){
         id = newId;
         balance = newBalance;
         annualInterestRate = newAnnualInterestRate;
     }
+
+
 
 
     public int getId(){
