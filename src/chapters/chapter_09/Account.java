@@ -60,4 +60,11 @@ public class Account {
         System.out.println("Account ID: " + getId());
         System.out.println("Balance " + getBalance());
     }
+    public String toString(){
+        String output = "";
+        output += "Annual Interest Rate: " + getAnnualInterestRate();
+        output += "\nAccount ID: " + getId();
+        output += "\nBalance " + getBalance();
+        return output;
+    }
 }

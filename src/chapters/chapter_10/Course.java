@@ -5,6 +5,9 @@ public class Course {
     private String[] students = new String[0];
     private int numberOfStudents;
 
+    public Course(){
+
+    }
     public Course(String courseName){
         this.courseName = courseName;
     }
